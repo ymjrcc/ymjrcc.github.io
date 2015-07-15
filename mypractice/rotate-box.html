@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>rotate-box</title>
+	<style type="text/css">
+		.box{
+			position: fixed;top: 50%;left: 50%;
+            width: 200px;height: 200px;
+            transform:translate(-50%,-50%);
+		}
+		.cube{
+			position: absolute;
+			width: 200px;height: 200px;
+			-webkit-animation:cube1 0s linear 12s 1 both reverse,cube 4s linear 12s infinite both;
+			transform-style:preserve-3d;perspective:500px;
+		}
+		.div{
+			position: absolute;top:0;width: 0;
+			width: 200px;height: 200px;border: 1px solid black;
+			line-height: 200px;text-align: center;
+			font-size: 30px;font-family: cursive;
+			transition: 2s;
+			transition-property: background-color;
+		}
+		.div1{
+			-webkit-animation:div1 2s both;
+		}
+		@-webkit-keyframes div1{
+			0%{transform: translateX(0px) rotateY(0deg)}
+			100%{transform:translateX(-100px) rotate3d(0,1,0,90deg);}
+		}
+		.div2{
+			-webkit-animation:div2 2s both 2s;
+		}
+		@-webkit-keyframes div2{
+			0%{transform: translateX(0px) rotateY(0deg)}
+			100%{transform:translateX(100px) rotate3d(0,1,0,90deg);}
+		}
+		.div3{
+			-webkit-animation:div3 2s both 4s;
+		}
+		@-webkit-keyframes div3{
+			0%{transform: translateX(0px) rotateY(0deg)}
+			100%{transform:translateY(-100px) rotate3d(1,0,0,90deg);}
+		}
+		.div4{
+			-webkit-animation:div4 2s both 6s;
+		}
+		@-webkit-keyframes div4{
+			0%{transform: translateX(0px) rotateY(0deg)}
+			100%{transform:translateY(100px) rotate3d(1,0,0,-90deg);}
+		}
+		.div5{
+			-webkit-animation:div5 2s both 8s;
+		}
+		@-webkit-keyframes div5{
+			0%{transform: translateX(0px) rotateY(0deg)}
+			100%{transform:translateZ(-100px);}
+		}
+		.div6{
+			-webkit-animation:div6 2s both 10s;
+		}
+		@-webkit-keyframes div6{
+			0%{transform: translateX(0px) rotateY(0deg)}
+			100%{transform:translateZ(100px);}
+		}
+
+		@-webkit-keyframes cube1{
+			0%{perspective:0px;}
+			100%{perspective:500px;}
+		}
+		@-webkit-keyframes cube{
+			0%{transform:rotate3d(1,1,1,0deg);}
+			100%{transform:rotate3d(1,1,1,360deg);}
+		}
+		.cube:hover .div1{background-color: red;opacity:0.75;}
+		.cube:hover .div2{background-color: blue;opacity:0.75;}
+		.cube:hover .div3{background-color: yellow;opacity:0.75;}
+		.cube:hover .div4{background-color: green;opacity:0.75;}
+		.cube:hover .div5{background-color: orange;opacity:0.75;}
+		.cube:hover .div6{background-color: pink;opacity:0.75;}
+	</style>
+</head>
+<body>
+	<div class="box">
+		<div class="cube">
+			<div class="div div1">left</div>
+			<div class="div div2">right</div>
+			<div class="div div3">top</div>
+			<div class="div div4">bottom</div>
+			<div class="div div5">back</div>
+			<div class="div div6">front</div>
+		</div>
+	</div>
+</body>
+</html>
