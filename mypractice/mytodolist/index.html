@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>My To-do List</title>
+	<link rel="stylesheet" href="../css/jquery-ui.css">
+	<link rel="stylesheet" href="../css/bootstrap.css">
+	<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+	<h1>My To-do List</h1>
+	<br>
+	<div class="parent">
+		<div class="task-list child c1" id="pending"><h3>待处理</h3><hr></div>
+		<div class="task-list child c2" id="inProgress"><h3>进行中</h3><hr></div>
+		<div class="task-list child c3" id="completed"><h3>已完成</h3><hr></div>	
+		<div class="task-list add child">
+
+		<h3>添加/删除项目</h3><hr>
+			<form id="todo-form">
+				<input type="text" class="addTitle" placeholder="标题"><br>
+				<textarea placeholder="内容" class="addDescriptions"></textarea><br>
+				<input type="text" placeholder="预计完成日期（月/日/年）" id="datepicker" class="addDate"><br>
+				<input type="button" class="btn btn-success" value="添加项目" id="addItem">			
+				<input type="button" class="btn btn-danger" value="清空全部">
+			</form>
+			<div id="delete-div">回收站</div>
+		</div>
+	</div>
+
+	<script src="../js/jquery-1.8.0.js"></script>
+	<script src="../js/jquery-ui.js"></script>
+	<script src="todo.js"></script>
+	<script>
+		$(document).ready(function(){
+			new MyTodoList();
+		});
+	</script>
+	
+</body>
+</html>
