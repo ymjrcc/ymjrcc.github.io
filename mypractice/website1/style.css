@@ -35,12 +35,12 @@ body{
 	width: 18px;
 	height: 18px;
 	line-height: 18px;
-	border: 1px #FFF solid;
+	border: 1px #FC9 solid;
 	text-align: center;
-	color: #FFF;
+	color: #FC9;
 }
 .bannerbtn span:hover{
-	background-color: #F00;
+	background-color: #F22;
 }
 .banner{
 	position: relative;
@@ -51,7 +51,7 @@ body{
 	bottom: 10px;
 }
 .red{
-	background-color: red;
+	background-color: #F22;
 }
 .mid-top{
 	height: 360px;
