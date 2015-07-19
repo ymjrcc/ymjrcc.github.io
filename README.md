@@ -1,2 +1,2 @@
 # ymjrcc.github.io
-test github pages
+This is my github pages.
