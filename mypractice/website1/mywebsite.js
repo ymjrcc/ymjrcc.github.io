@@ -1,6 +1,7 @@
 var arr = ["images/banner1.jpg","images/banner2.jpg","images/banner3.jpg","images/banner4.jpg"];
 
 var cnt = 0;
+var cnt1 = 0;
 
 function autoplay(){
 	if(arr.length == cnt) cnt = 0;
@@ -9,15 +10,23 @@ function autoplay(){
 		$('#span'+cnt).removeClass('red');		
 	}
 	else if(cnt==0){
-		$('#span1').addClass('red');
-		$('#span4').removeClass('red');
+		if(cnt1==0){
+			$('#span1').removeClass('red');
+			$('#span2').addClass('red');
+			cnt=1;
+		}
+		else{
+			$('#span1').addClass('red');
+			$('#span4').removeClass('red');			
+		}
 	}
 	document.getElementById('banner1').src = arr[cnt];
 
 	cnt++;
+	cnt1++;
 }
 
-var timer = setInterval(autoplay,2000);
+var timer = setInterval(autoplay,3000);
 
 function clearTimer(){
 	clearInterval(timer);
@@ -39,5 +48,5 @@ function showBannerById(num){
 
 //鼠标离开时恢复动画
 function btnMouseOut(){
-	timer = setInterval(autoplay,2000);
+	timer = setInterval(autoplay,3000);
 }
