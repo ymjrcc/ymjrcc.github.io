@@ -83,7 +83,7 @@ button{
 	display: block;
 	text-decoration: none;
 	border: none;
-	background-color: #333;
+	background-color: #444;
 	color: #EEE;
 	padding: 10px;
 	margin: 45px auto;
@@ -213,8 +213,8 @@ p{
 	position: relative;
 	padding-top: 50px;
 	color: #eee;
-	padding-left: 100px;
-	padding-right: 100px;
+	padding-left: 60px;
+	padding-right: 60px;
 	-webkit-box-sizing:border-box;
 	-moz-box-sizing:border-box;
 	box-sizing: border-box;
@@ -333,3 +333,28 @@ footer{
 .copy{
 	padding-bottom: 30px;
 }
+
+.card:hover{
+	background-color: rgba(0,0,0,0.3) !important;
+}
+
+.icon:hover{
+	transform:rotate(405deg);
+}
+
+.icon,.btn1,.card{
+	transition-property: all;
+	transition-duration: 1.5s;
+	-moz-transition-property: all; /* Firefox 4 */
+	-moz-transition-duration: 1.5s; /* Firefox 4 */
+	-webkit-transition-property: all; /* Safari and Chrome */
+	-webkit-transition-duration: 1.5s; /* Safari and Chrome */
+	-o-transition-property: all; /* Opera */
+	-o-transition-duration: 1s; /* Opera */
+}
+
+.btn1:hover{
+	background-color: #333;
+	color: #fff;
+}
+
