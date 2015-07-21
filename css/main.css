@@ -375,7 +375,7 @@ footer{
   height: 52px;
   background-image: url(../images/toolbar.png);
   background-repeat: no-repeat;
-  background-color: rgba(0,0,0,0.5);
+  opacity: 0.8;
   margin-top: 1px;
   transition: all 0.5s; }
 
