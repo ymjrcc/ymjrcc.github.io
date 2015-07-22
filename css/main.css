@@ -409,3 +409,7 @@ footer{
   transform: scale(0.01);
   transform-origin: right bottom;
   transition: all 0.5s; }
+
+.hideweixin{
+	display: none;
+}
