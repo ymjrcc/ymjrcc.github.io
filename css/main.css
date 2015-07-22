@@ -410,6 +410,6 @@ footer{
   transform-origin: right bottom;
   transition: all 0.5s; }
 
-/*.hideweixin{
+.hideweixin{
 	display: none;
-}*/
+}
