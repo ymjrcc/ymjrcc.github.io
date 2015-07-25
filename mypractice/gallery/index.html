@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Photos Gallery</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body onselectstart="return false;">
+
+	<div class="wrap" id="wrap">
+		<div id="bgi"></div>	
+		<div class="photo photo_front" id="photo_{{index}}" onclick="turn(this)">
+			<div class="photo-wrap">
+				<div class="side side-front">
+					<p class="image"><img src="img/{{img}}"></p>
+					<!-- <p class="caption"></p> -->				
+				</div>
+				<div class="side side-back">
+					<p class="desc">{{desc}}</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<script src="data.js"></script>
+	<script src="script.js"></script>
+
+</body>
+</html>
