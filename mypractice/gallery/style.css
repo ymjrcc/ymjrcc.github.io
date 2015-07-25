@@ -128,7 +128,8 @@ body{
 	z-index: 999;
 	background-color: #555;
 	opacity: 0.5;
-	transform:translateX(-50%);
+	-webkit-transform:translateX(-50%);
+	-moz-transform:translateX(-50%);
 }
 .nav .i{
 	width: 30px;
