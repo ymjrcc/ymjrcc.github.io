@@ -1,4 +1,4 @@
-//1.翻面控制
+//翻面控制
 function turn(ele){
 	var cls = ele.className;
 	var n = ele.id.split('_')[1];
@@ -17,13 +17,13 @@ function turn(ele){
 	return ele.className = cls;
 }
 
-//3.通用函数
+//通用函数
 function g(selector){
 	var method = selector.substr(0,1) == '.'?'getElementsByClassName':'getElementById';
 	return document[method](selector.substr(1));
 }
 
-//4.输出所有海报
+//输出所有海报
 var data = data;
 function addPhotos(){
 	var template = g('#wrap').innerHTML;
@@ -42,7 +42,7 @@ function addPhotos(){
 }
 addPhotos();
 
-//5.排序海报
+//排序海报
 function rsort(n){
 	var _photo = g('.photo');
 	var photos = [];
@@ -88,7 +88,7 @@ function rsort(n){
 	g('#nav_'+n).className += " i_current ";
 }
 
-//6.计算左右分区范围
+//计算左右分区范围
 function range(){
 	var range = {left:{ x:[], y:[] },right:{ x:[], y:[]} };
 	var wrap = {
