@@ -1,0 +1,372 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.mainbox{
+    width: 1616px;
+    font-family: 'Microsoft YaHei';
+}
+
+.notice{
+    height: 36px;
+    font-size: 12px;
+    line-height: 36px;
+    vertical-align: middle;
+    background-color: #f3f3f3;
+    position: relative;
+}
+
+.notice .hp1{
+    float: left;
+    margin-left: 207px;
+}
+
+.notice .hp1 a{
+    text-decoration: none;
+    color: #21a557;
+}
+
+.notice .hp2{
+    float: right;
+    margin-right: 207px;
+}
+
+.notice .close{
+    background-image: url(../img/sprite.jpg);
+    background-repeat: no-repeat;
+    background-position: -676px -222px;
+    width: 9px;
+    height: 9px;
+    position: absolute;
+    top: 14px;
+    right:258px; 
+}
+
+.head{
+    height: 89px;
+    line-height: 89px;
+    vertical-align: middle;
+    position: relative;
+}
+
+.hs1{
+    font-size: 21px;
+    float: left;
+    margin-left: 207px;
+    letter-spacing: 2px;
+}
+
+.hs1 span{
+    color: #39a030;
+}
+
+.hs2{
+    float: left;
+    margin-left: 31px;
+    margin-top: 34px;
+    display: block;
+    width: 54px;   
+    background-color: #21a557;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    border-radius: 2px;
+    line-height: 21px;
+}
+
+.hs3{
+    float: left;
+    font-size: 12px;
+    margin-left: 14px;
+}
+
+.hs4{
+    float: left;
+    margin-left: 418px;
+    font-size: 16px;
+}
+
+.hs5{
+    float: left;
+    margin-left: 55px;
+    font-size: 16px;
+}
+
+.hs6{
+    float: left;
+    margin-left: 55px;
+    font-size: 16px;
+}
+
+.search{
+    background-image: url(../img/sprite.jpg);
+    background-repeat: no-repeat;
+    background-position: -697px -222px;
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    top: 35px;
+    right:210px; 
+}
+
+.banner{
+    
+}
+
+.maincontent1{
+    height: 297px;
+    margin-top: -4px;
+    position: relative;
+    line-height: 297px;
+}
+
+.maincontent1 .box1{
+    text-align: center;
+    height: 297px;
+    width: 1616px;
+}
+
+.maincontent1 .gkk{
+    display: inline-block;
+    vertical-align: middle;
+    width: 340px;
+    height: 175px;
+    position: relative;
+}
+
+.maincontent1 .gkk .gkklogo{
+    background-image: url(../img/sprite.jpg);
+    background-repeat: no-repeat;
+    background-position: -652px -362px;
+    margin-top: 7px;
+    width: 80px;
+    height: 80px;    
+}
+
+.maincontent1 .gkk .gkktitle{
+    position: absolute;
+    bottom: 18px;
+    left: 97px;
+    font-size: 22px;
+}
+
+.maincontent1 .gkk .gkktext{
+    position: absolute;
+    font-size: 14px;
+    line-height: 24px;
+    left: 97px;
+    bottom: 40px;
+    text-align: left;
+}
+
+.maincontent1 .gkk .gkkmore{
+    color: #39a030;
+    font-size: 14px;
+    position: absolute;
+    left: 97px;
+    bottom: -142px;
+}
+
+.maincontent1 .ykt{
+    display: inline-block;
+    vertical-align: middle;
+    width: 340px;
+    height: 175px;
+    margin-right: 80px;
+    margin-left: 80px;
+    position: relative;
+}
+
+.maincontent1 .ykt .yktlogo{
+    background-image: url(../img/sprite.jpg);
+    background-repeat: no-repeat;
+    background-position: -744px -362px;
+    margin-top: 7px;
+    width: 80px;
+    height: 80px;    
+}
+
+.maincontent1 .ykt .ykttitle{
+    position: absolute;
+    bottom: 18px;
+    left: 97px;
+    font-size: 22px;
+}
+
+.maincontent1 .ykt .ykttext{
+    position: absolute;
+    font-size: 14px;
+    line-height: 24px;
+    left: 97px;
+    bottom: 40px;
+    text-align: left;
+}
+
+.maincontent1 .ykt .yktmore{
+    color: #39a030;
+    font-size: 14px;
+    position: absolute;
+    left: 97px;
+    bottom: -142px;
+}
+
+.maincontent1 .mooc{
+    display: inline-block;
+    vertical-align: middle;
+    width: 340px;
+    height: 175px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.maincontent1 .mooc .mooclogo{
+    background-image: url(../img/sprite.jpg);
+    background-repeat: no-repeat;
+    background-position: -835px -362px;
+    margin-top: 7px;
+    width: 80px;
+    height: 80px;    
+}
+
+.maincontent1 .mooc .mooctitle{
+    position: absolute;
+    bottom: 18px;
+    left: 97px;
+    font-size: 22px;
+}
+
+.maincontent1 .mooc .mooctext{
+    position: absolute;
+    font-size: 14px;
+    line-height: 24px;
+    left: 97px;
+    bottom: 40px;
+    text-align: left;
+}
+
+.maincontent1 .mooc .moocmore{
+    color: #39a030;
+    font-size: 14px;
+    position: absolute;
+    left: 97px;
+    bottom: -142px;
+}
+
+.maincontent2{
+    height: 220px;
+}
+
+.maincontent2 div{
+    float: left;
+}
+
+.maincontent2 .img1{
+    background-image: url(../img/sprite.jpg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    width: 320px;
+    height: 220px;
+}
+
+.maincontent2 .img2{
+    background-image: url(../img/sprite.jpg);
+    background-repeat: no-repeat;
+    background-position: -322px 0;
+    margin-left: 4px;
+    width: 320px;
+    height: 220px;
+}
+
+.maincontent2 .img3{
+    background-image: url(../img/sprite.jpg);
+    background-repeat: no-repeat;
+    background-position: -644px 0;
+    margin-left: 4px;
+    width: 320px;
+    height: 220px;
+}
+
+.maincontent2 .img4{
+    background-image: url(../img/sprite.jpg);
+    background-repeat: no-repeat;
+    background-position: 0 -222px;
+    margin-left: 4px;
+    width: 320px;
+    height: 220px;
+}
+
+.maincontent2 .img5{
+    background-image: url(../img/sprite.jpg);
+    background-repeat: no-repeat;
+    background-position: -322px -222px;
+    margin-left: 4px;
+    width: 320px;
+    height: 220px;
+}
+
+footer{
+    height: 262px;
+    background-color: #2c3339;
+}
+
+footer div{
+    float: left;
+    color: #bebfc0;
+    margin-top: 74px;
+}
+
+footer .fp0{
+    font-size: 21px;
+    color: #39a030;
+    line-height: 65px;
+    vertical-align: middle;
+}
+
+footer .fp1{
+    font-size: 12px;
+    line-height: 25px;
+}
+
+footer .fp2{
+    font-size: 13px;
+    line-height: 29px;
+    vertical-align: middle;
+}
+
+footer .fp3{
+    font-size: 14px;
+    line-height: 29px;
+    vertical-align: middle;
+}
+
+
+.footer1{
+    margin-left: 256px;
+}
+
+.footer2{
+    margin-left: 150px;
+}
+
+.footer3,.footer4{
+    margin-left: 100px;
+    position: relative;
+}
+
+.footer3 .weibologo{
+    display: inline-block;
+    background-image: url(../img/sprite.jpg);
+    background-repeat: no-repeat;
+    background-position: -644px -222px;
+    width: 20px;
+    height: 16px;
+    position: absolute;
+    top: 20px;
+    left:40px;    
+}
+
+.footer4 .hide{
+    visibility: hidden;
+}
