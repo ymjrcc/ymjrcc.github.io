@@ -8,6 +8,11 @@
     font-family: 'Microsoft YaHei';
 }
 
+a{
+    text-decoration: none;
+    color: #333;
+}
+
 .notice{
     height: 36px;
     font-size: 12px;
@@ -99,6 +104,11 @@
     font-size: 16px;
 }
 
+.hs4 a:hover, .hs5 a:hover, .hs6 a:hover{
+    color: #39a030;
+    cursor: pointer;
+}
+
 .search{
     background-image: url(../img/sprite.jpg);
     background-repeat: no-repeat;
@@ -110,8 +120,50 @@
     right:210px; 
 }
 
+.search:hover{
+    cursor: pointer;
+    background-image: url(../img/sprite.jpg);
+    background-repeat: no-repeat;
+    background-position: -726px -222px;
+    width: 19px;
+    height: 19px;
+    position: absolute;
+    top: 35px;
+    right:210px; 
+}
+
 .banner{
-    
+    position: relative;
+}
+
+.banner .points{
+    position: absolute;
+    width: 52px;
+    height: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 24px;
+}
+
+.banner .points span{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    float: left;
+}
+
+.span1{
+    background-color: #333;
+}
+
+.span2{
+    background-color: #fff;
+    margin-left: 11px;
+    margin-right: 11px;
+}
+
+.span3{
+    background-color: #fff;
 }
 
 .maincontent1{
@@ -146,9 +198,10 @@
 
 .maincontent1 .gkk .gkktitle{
     position: absolute;
-    bottom: 18px;
+    bottom: 154px;
     left: 97px;
     font-size: 22px;
+    line-height: 25px;
 }
 
 .maincontent1 .gkk .gkktext{
@@ -160,12 +213,13 @@
     text-align: left;
 }
 
-.maincontent1 .gkk .gkkmore{
+.maincontent1 .gkk .gkkmore a{
     color: #39a030;
     font-size: 14px;
     position: absolute;
     left: 97px;
-    bottom: -142px;
+    bottom: 0;
+    line-height: 14px;
 }
 
 .maincontent1 .ykt{
@@ -189,9 +243,10 @@
 
 .maincontent1 .ykt .ykttitle{
     position: absolute;
-    bottom: 18px;
+    bottom: 154px;
     left: 97px;
     font-size: 22px;
+    line-height: 25px;
 }
 
 .maincontent1 .ykt .ykttext{
@@ -203,12 +258,13 @@
     text-align: left;
 }
 
-.maincontent1 .ykt .yktmore{
+.maincontent1 .ykt .yktmore a{
     color: #39a030;
     font-size: 14px;
     position: absolute;
     left: 97px;
-    bottom: -142px;
+    bottom: 0;
+    line-height: 14px;
 }
 
 .maincontent1 .mooc{
@@ -232,9 +288,10 @@
 
 .maincontent1 .mooc .mooctitle{
     position: absolute;
-    bottom: 18px;
+    bottom: 154px;
     left: 97px;
     font-size: 22px;
+    line-height: 25px;
 }
 
 .maincontent1 .mooc .mooctext{
@@ -246,12 +303,18 @@
     text-align: left;
 }
 
-.maincontent1 .mooc .moocmore{
+.maincontent1 .mooc .moocmore a{
     color: #39a030;
     font-size: 14px;
     position: absolute;
     left: 97px;
-    bottom: -142px;
+    bottom: 0;
+    line-height: 14px;
+}
+
+.gkkmore a:hover, .yktmore a:hover, .moocmore a:hover{
+    cursor: pointer;
+    text-decoration: underline;
 }
 
 .maincontent2{
@@ -306,6 +369,16 @@
     height: 220px;
 }
 
+.maincontent3{
+    background-color: #f8f8f8;
+    height: 1000px;
+}
+
+.maincontent3 .box2{
+    /*margin: 80px 205px 120px;*/
+    background-color: #eee;
+}
+
 footer{
     height: 262px;
     background-color: #2c3339;
@@ -335,12 +408,16 @@ footer .fp2{
     vertical-align: middle;
 }
 
-footer .fp3{
+footer .fp3 a{
+    color: #bebfc0;
     font-size: 14px;
     line-height: 29px;
     vertical-align: middle;
 }
 
+footer .fp3 a:hover{
+    text-decoration: underline;
+}
 
 .footer1{
     margin-left: 256px;
