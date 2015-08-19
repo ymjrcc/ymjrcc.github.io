@@ -375,8 +375,89 @@ a{
 }
 
 .maincontent3 .box2{
-    /*margin: 80px 205px 120px;*/
-    background-color: #eee;
+    margin-right: 205px;
+    margin-left: 205px;
+}
+
+.maincontent3 .box2 .design{
+    float: left;
+    width: 200px;
+    height: 50px;
+    margin-top: 80px;
+    background-color: #39a030;
+    color: #fff;
+    line-height: 50px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 20px;
+    letter-spacing: 1px;
+    box-shadow: 2px 2px 1px #d4d3d3;
+    cursor: pointer;
+}
+
+.maincontent3 .box2 .language{
+    float: left;
+    width: 200px;
+    height: 50px;
+    margin-top: 80px;
+    background-color: #fff;
+    color: #666;
+    line-height: 50px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 20px;
+    letter-spacing: 1px;
+    box-shadow: 2px 2px 1px #d4d3d3;
+    cursor: pointer;
+}
+
+.maincontent3 .box2 .intro{
+    background-color: #fff;
+    width: 225px;
+    height: 230px;
+    float: right;
+    margin-top: 84px;
+    box-shadow: -2px 2px #ddd;
+}
+
+.maincontent3 .box2 .intro .intro-title{
+    font-size: 16px;
+    color: #333;
+    padding-left: 20px;
+    height: 55px;
+    line-height: 55px;
+    vertical-align: middle;
+    box-shadow: 0 2px #ddd;
+}
+
+.maincontent3 .box2 .intro .intro-video{
+    width: 180px;
+    margin: 0 auto;
+}
+
+.maincontent3 .box2 .intro .intro-video p{
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 9px;
+}
+
+.maincontent3 .box2 .hot{
+    float: right;
+    background-color: #fff;
+    width: 225px;
+    margin-right: -225px;
+    margin-top: 334px;
+    box-shadow: -2px 2px #ddd;
+}
+
+.maincontent3 .box2 .hot .hot-title{
+    font-size: 16px;
+    color: #333;
+    padding-left: 20px;
+    height: 55px;
+    line-height: 55px;
+    vertical-align: middle;
+    box-shadow: 0 2px #ddd;    
 }
 
 footer{
@@ -447,3 +528,5 @@ footer .fp3 a:hover{
 .footer4 .hide{
     visibility: hidden;
 }
+
+
