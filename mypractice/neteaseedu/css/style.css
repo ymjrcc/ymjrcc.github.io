@@ -133,7 +133,20 @@ a{
 }
 
 .banner{
-    position: relative;
+    position: relative;   
+}
+
+.banner .fade{
+    -webkit-animation: fade 5s 5s linear infinite reverse;
+}
+
+@-webkit-keyframes fade{
+    0%{opacity: 0.5;}
+    5%{opacity: 1;}
+    10%{opacity: 1;}
+    90%{opacity: 1;}
+    95%{opacity: 1;}
+    100%{opacity: 0.5;}
 }
 
 .banner .points{

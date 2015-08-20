@@ -58,41 +58,84 @@ function func_cls10(){
 
 var bannerimg = ["img/banner1.jpg", "img/banner2.jpg", "img/banner3.jpg"];
 var aarr = ["http://open.163.com/", "http://study.163.com/", "http://www.icourse163.org/"];
-var cnt = 0; 
+var cnt = 0;
+var flag1 = true; 
 
-var span1 = document.getElementById('span1').style.backgroundColor;
-var span2 = document.getElementById('span2').style.backgroundColor;
-var span3 = document.getElementById('span3').style.backgroundColor;
+var banner1 = document.getElementById('banner1');
+var span1 = document.getElementById('span1');
+var span2 = document.getElementById('span2');
+var span3 = document.getElementById('span3');
 
 function autoplay(){
     document.getElementById('banner1').src = bannerimg[cnt];
     document.getElementById('a1').href = aarr[cnt];
     if(cnt==0){
-        span1 = '#333';
-        span2 = '#fff';
-        span3 = '#fff';
+        span1.style.backgroundColor = '#333';
+        span2.style.backgroundColor = '#fff';
+        span3.style.backgroundColor = '#fff';
     }
     else if(cnt==1){
-        span1 = '#fff';
-        span2 = '#333';
-        span3 = '#fff';
+        span1.style.backgroundColor = '#fff';
+        span2.style.backgroundColor = '#333';
+        span3.style.backgroundColor = '#fff';
     }
     else if(cnt==2){
-        span1 = '#fff';
-        span2 = '#fff';
-        span3 = '#333';
+        span1.style.backgroundColor = '#fff';
+        span2.style.backgroundColor = '#fff';
+        span3.style.backgroundColor = '#333';
     }
 
     cnt++;
+    flag1 = false;
     if(cnt == 3)cnt = 0;
 }
+
+if(flag1)autoplay();
 
 var timer = setInterval(autoplay,5000);
 
 function clearTimer(){
     clearInterval(timer);
+    removeClass(banner1,'fade');
 }
 
-function btnMouseOut(){
+function bannerMouseOut(){
     timer = setInterval(autoplay,5000);
+    addClass(banner1,'fade');
+}
+
+//几个工具函数
+
+function hasClass(obj, cls) {
+    return obj.className.match(new RegExp('(\\s|^)' + cls + '(\\s|$)'));
+}
+
+function addClass(obj, cls) {
+    if (!this.hasClass(obj, cls)) obj.className += " " + cls;
+}
+
+function removeClass(obj, cls) {
+    if (hasClass(obj, cls)) {
+        var reg = new RegExp('(\\s|^)' + cls + '(\\s|$)');
+        obj.className = obj.className.replace(reg, ' ');
+    }
+}
+
+function css(obj, attr, value) {
+    switch (arguments.length) {
+        case 2:
+            if (typeof arguments[1] == "object") {    //批量设置属性
+                for (var i in attr) obj.style[i] = attr[i]
+            }
+            else {    // 读取属性值
+                return obj.currentStyle ? obj.currentStyle[attr] : getComputedStyle(obj, null)[attr];
+            }
+            break;
+        case 3:
+            //设置属性
+            obj.style[attr] = value;
+            break;
+        default:
+            return "";
+    }
 }
