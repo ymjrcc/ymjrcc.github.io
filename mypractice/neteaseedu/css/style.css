@@ -371,44 +371,12 @@ a{
 
 .maincontent3{
     background-color: #f8f8f8;
-    height: 1000px;
+    height: 1550px;
 }
 
 .maincontent3 .box2{
     margin-right: 205px;
     margin-left: 205px;
-}
-
-.maincontent3 .box2 .design{
-    float: left;
-    width: 200px;
-    height: 50px;
-    margin-top: 80px;
-    background-color: #39a030;
-    color: #fff;
-    line-height: 50px;
-    text-align: center;
-    vertical-align: middle;
-    font-size: 20px;
-    letter-spacing: 1px;
-    box-shadow: 2px 2px 1px #d4d3d3;
-    cursor: pointer;
-}
-
-.maincontent3 .box2 .language{
-    float: left;
-    width: 200px;
-    height: 50px;
-    margin-top: 80px;
-    background-color: #fff;
-    color: #666;
-    line-height: 50px;
-    text-align: center;
-    vertical-align: middle;
-    font-size: 20px;
-    letter-spacing: 1px;
-    box-shadow: 2px 2px 1px #d4d3d3;
-    cursor: pointer;
 }
 
 .maincontent3 .box2 .intro{
@@ -448,9 +416,10 @@ a{
     margin-right: -225px;
     margin-top: 334px;
     box-shadow: -2px 2px #ddd;
+    height: 778px;
 }
 
-.maincontent3 .box2 .hot .hot-title{
+.maincontent3 .box2 .hot .hot-rank{
     font-size: 16px;
     color: #333;
     padding-left: 20px;
@@ -458,6 +427,81 @@ a{
     line-height: 55px;
     vertical-align: middle;
     box-shadow: 0 2px #ddd;    
+}
+
+.maincontent3 .box2 .design{
+    float: left;
+    width: 200px;
+    height: 50px;
+    margin-top: 80px;
+    background-color: #39a030;
+    color: #fff;
+    line-height: 50px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 20px;
+    letter-spacing: 1px;
+    box-shadow: 2px 2px 1px #d4d3d3;
+    cursor: pointer;
+}
+
+.maincontent3 .box2 .language{
+    float: left;
+    width: 200px;
+    height: 50px;
+    margin-top: 80px;
+    background-color: #fff;
+    color: #666;
+    line-height: 50px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 20px;
+    letter-spacing: 1px;
+    box-shadow: 2px 2px 1px #d4d3d3;
+    cursor: pointer;
+}
+
+.row{
+    width: 960px;
+    height: 228px;
+}
+
+.maincontent3 .box2 .row .cls{
+    float: left;
+    width: 225px;
+    height: 228px;
+    background-color: #fff;
+    box-shadow: 2px 2px 1px #e6e6e6;
+}
+
+.maincontent3 .box2 .row1 .cls{
+    margin-top: 160px;
+}
+
+.row1 .cls1{
+    margin-left: -400px
+}
+
+.row1 .cls2{
+    margin-left: -155px;
+}
+
+.row1 .cls3,.row1 .cls4{
+    margin-left: 20px;
+}
+
+.maincontent3 .box2 .row2 .cls,
+.maincontent3 .box2 .row3 .cls,
+.maincontent3 .box2 .row4 .cls,
+.maincontent3 .box2 .row5 .cls{
+    margin-top: 20px;
+}
+
+.row2 .cls2, .row2 .cls3, .row2 .cls4,
+.row3 .cls2, .row3 .cls3, .row3 .cls4,
+.row4 .cls2, .row4 .cls3, .row4 .cls4,
+.row5 .cls2, .row5 .cls3, .row5 .cls4{
+    margin-left: 20px;
 }
 
 footer{
