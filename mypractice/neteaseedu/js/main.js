@@ -17,7 +17,7 @@ function func_hot(){
             for(var j = 0;j<10;j++){
                 img[j].src = i[j]['smallPhotoUrl'];
                 tit[j].innerHTML = i[j]['name'];
-                peo[j].innerHTML = i[j]['learnnerCount'];
+                peo[j].innerHTML = '<div class="hot-people-logo"></div>'+i[j]['learnerCount'];
             }
         }
     }
@@ -42,8 +42,8 @@ function func_cls10(){
                 img[j].src = i.list[j].middlePhotoUrl;
                 tit[j].innerHTML = i.list[j].description;
                 tea[j].innerHTML = i.list[j].provider;
-                stu[j].innerHTML = i.list[j].learnerCount;
-                pri[j].innerHTML = i.list[j].price;
+                stu[j].innerHTML = '<div class="cls-students-logo"></div>'+i.list[j].learnerCount;
+                pri[j].innerHTML = '￥'+i.list[j].price;
             }
         }
     }
