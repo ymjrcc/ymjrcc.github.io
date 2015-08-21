@@ -1,6 +1,6 @@
-//课程列表ajax
-window.onload=function(){func_hot();}
-window.onload=function(){func_cls10();}
+//ajax部分
+
+window.onload=function(){func_hot();func_cls10();}
 
 function func_hot(){
     var xml = new XMLHttpRequest();
@@ -9,7 +9,7 @@ function func_hot(){
     xml.open(method,url);
     xml.onreadystatechange = function(){
         if(xml.readyState == 4 && xml.status == 200){
-            var h = xml.responseTest;
+            var h = xml.responseText;
             var i = eval(h);
             var img = document.getElementsByClassName('hot-img');
             var tit = document.getElementsByClassName('hot-title');
@@ -31,7 +31,7 @@ function func_cls10(){
     xml.open(method,url);
     xml.onreadystatechange = function(){
         if(xml.readyState == 4 && xml.status == 200){
-            var h = xml.responseTest;
+            var h = xml.responseText;
             var i = JSON.parse(h);
             var img = document.getElementsByClassName('cls-img');
             var tit = document.getElementsByClassName('cls-title');

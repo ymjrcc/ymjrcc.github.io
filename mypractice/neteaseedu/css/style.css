@@ -138,9 +138,12 @@ a{
 
 .banner .fade{
     -webkit-animation: fade 5s 5s linear infinite reverse;
+    -moz-animation: fade 5s 5s linear infinite reverse;
+    -ms-animation: fade 5s 5s linear infinite reverse;
+    -o-animation: fade 5s 5s linear infinite reverse;
 }
 
-@-webkit-keyframes fade{
+@keyframes fade{
     0%{opacity: 0.5;}
     5%{opacity: 1;}
     10%{opacity: 1;}
@@ -515,6 +518,21 @@ a{
 .row4 .cls2, .row4 .cls3, .row4 .cls4,
 .row5 .cls2, .row5 .cls3, .row5 .cls4{
     margin-left: 20px;
+}
+
+.cls-img{
+    width: 223px;
+    height: 124px;
+    margin: 1px;
+}
+
+.cls-title{
+    line-height: 30px;
+    font-size: 12px;
+    vertical-align: middle;
+    text-overflow:ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
 footer{
