@@ -462,6 +462,15 @@ a{
     margin-bottom: 9px;
 }
 
+.maincontent3 .box2 .intro .intro-video .intro-video-img{
+    background-image: url(../img/sprite.jpg);
+    background-repeat: no-repeat;
+    background-position: -652px -246px;
+    width: 180px;
+    height: 110px;
+    cursor: pointer;
+}
+
 .maincontent3 .box2 .hot{
     float: right;
     background-color: #fff;
@@ -655,6 +664,60 @@ a{
     color: #ff3f00;
 }
 
+.pages10{
+    width: 302px;
+    height: 20px;
+    line-height: 20px;
+    vertical-align: middle;
+    float: right;
+    margin-right: 245px;
+    margin-top: 30px;
+    cursor: pointer;
+    display: block;
+}
+
+.pages20{
+    width: 302px;
+    height: 20px;
+    line-height: 20px;
+    vertical-align: middle;
+    float: right;
+    margin-right: 245px;
+    margin-top: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+.pages10 span,.pages20 span{
+    display: inline-block;
+    float: left;
+}
+
+.pages10 .pages-0,.pages10 .pages-9,
+.pages20 .pages-0,.pages20 .pages-9{
+    width: 31px;
+    height: 20px;
+    text-align: center;
+    color: #fff;
+    background-color: #9dd8b1;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.pages10 .pages-num,.pages20 .pages-num{
+    width: 20px;
+    text-align: center;
+    color: #888;
+    font-size: 13px;
+    margin: 0 5px;
+}
+
+.pages10 .pages-num:hover,
+.pages20 .pages-num:hover{
+    background-color: #9dd8b1;
+    color: #fff;
+}
+
 footer{
     height: 262px;
     background-color: #2c3339;
@@ -722,6 +785,51 @@ footer .fp3 a:hover{
 
 .footer4 .hide{
     visibility: hidden;
+}
+
+.v-background{
+    position:fixed; 
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    display: none;
+}
+
+.v-window{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background-color: white;
+    width: 950px;
+    height: 576px;
+}
+
+.v-window p{
+    font-size: 18px;
+    font-family: 'Microsoft YaHei';
+    line-height: 18px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    margin-left: 50px;
+}
+
+.v-window .v-close{
+    background-image: url(../img/sprite.jpg);
+    background-repeat: no-repeat;
+    background-position: -774px -222px;
+    width: 10px;
+    height: 10px;
+    float: right;
+    margin-right: 12px;
+    margin-top: 12px;
+    cursor: pointer;
+}
+
+.v-window .v-video{
+    margin-left: 50px;
 }
 
 

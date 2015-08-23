@@ -1,6 +1,6 @@
 //ajax部分
 
-window.onload=function(){func_hot();func_cls10();}
+window.onload=function(){func_hot();func_cls_ij(1,10);}
 
 function func_hot(){
     var xml = new XMLHttpRequest();
@@ -24,9 +24,9 @@ function func_hot(){
     xml.send();
 }
 
-function func_cls10(){
+function func_cls_ij(i,j){
     var xml = new XMLHttpRequest();
-    var url = 'http://study.163.com/webDev/couresByCategory.htm?pageNo=1&psize=20&type=10';
+    var url = 'http://study.163.com/webDev/couresByCategory.htm?pageNo='+i+'&psize=20&type='+j;
     var method = 'get';
     xml.open(method,url);
     xml.onreadystatechange = function(){
@@ -43,15 +43,35 @@ function func_cls10(){
                 tit[j].innerHTML = i.list[j].description;
                 tea[j].innerHTML = i.list[j].provider;
                 stu[j].innerHTML = '<div class="cls-students-logo"></div>'+i.list[j].learnerCount;
-                pri[j].innerHTML = '￥'+i.list[j].price;
+                pri[j].innerHTML = '￥'+i.list[j].price.toFixed(2);
             }
         }
     }
     xml.send();
 }
 
+var design = document.getElementById('design');
+var language = document.getElementById('language');
+var pages10 = document.getElementById('pages10');
+var pages20 = document.getElementById('pages20');
 
+function clickDesign(){
+    design.style.backgroundColor = "#39a030";
+    design.style.color = "#fff";
+    language.style.backgroundColor = "#fff";
+    language.style.color = "#666";
+    pages10.style.display = "block";
+    pages20.style.display = "none";
+}
 
+function clickLanguage(){
+    language.style.backgroundColor = "#39a030";
+    language.style.color = "#fff";
+    design.style.backgroundColor = "#fff";
+    design.style.color = "#666";
+    pages10.style.display = "none";
+    pages20.style.display = "block";
+}
 
 
 // 轮播图
@@ -103,6 +123,16 @@ function bannerMouseOut(){
     timer = setInterval(autoplay,5000);
     addClass(banner1,'fade');
 }
+
+//显示和隐藏视频
+function showVideo(){
+    document.getElementById('v-background').style.display="inline-block";
+}
+
+function hideVideo(){
+    document.getElementById('v-background').style.display="none";
+}
+
 
 //几个工具函数
 
