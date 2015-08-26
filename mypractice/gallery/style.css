@@ -67,7 +67,7 @@ body{
 }
 .photo .side-front .image img{
 	width: 100%;
-
+	cursor: pointer;
 }
 .photo .side-front .caption{
 	text-align: center;
