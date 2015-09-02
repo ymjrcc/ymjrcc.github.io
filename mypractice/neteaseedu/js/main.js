@@ -133,6 +133,14 @@ function hideVideo(){
     document.getElementById('v-background').style.display="none";
 }
 
+//显示和隐藏登陆框
+function showLogin(){
+    document.getElementById('login').style.display="block";
+}
+function hideLogin(){
+    document.getElementById('login').style.display="none";
+}
+
 //顶部不再提醒
 var dontremind = (function(){
     var notice = document.querySelector('.notice');

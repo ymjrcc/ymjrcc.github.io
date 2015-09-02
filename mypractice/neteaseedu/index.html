@@ -20,7 +20,7 @@
         </div>
         <div class="head">
             <span class="hs1"><span><strong>EDU</strong> | </span><strong></strong>网易教育产品部</span>
-            <span class="hs2"><strong>+</strong> 关注</span>
+            <span class="hs2" onclick="showLogin();"><strong>+</strong> 关注</span>
             <span class="hs3">粉丝 45</span>
 
             <span class="hs4"><a href="http://open.163.com/" target="_blank">网易公开课</a></span>
@@ -378,6 +378,18 @@
             <video src="http://mov.bn.netease.com/open-movie/nos/mp4/2014/12/30/SADQ86F5S_shd.mp4" width=850 controls="ture">
             </video>
         </div>
+    </div>
+</div>
+
+<div class="login" id="login">
+    <div class="l-window">
+        <div class="l-close" onclick="hideLogin();"></div>
+        <form action="" method="get">
+            <p>登录网易云课堂</p>
+            <input id="account" type="text" placeholder="账号">
+            <input id="pwd" type="password" placeholder="密码">
+            <div id="submit-btn">登录</div>            
+        </form>
     </div>
 </div>
     
