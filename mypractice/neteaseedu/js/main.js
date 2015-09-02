@@ -133,6 +133,20 @@ function hideVideo(){
     document.getElementById('v-background').style.display="none";
 }
 
+//顶部不再提醒
+var dontremind = (function(){
+    var notice = document.querySelector('.notice');
+    var no_more_btn = document.querySelector('.hp2');
+    var noremind = /hp2/;
+    if(noremind.test(document.cookie)){
+        notice.style.display = "none";
+    }
+    no_more_btn.onclick = function(){  
+        addCookieItem('hp2','1',365);     
+        notice.style.marginTop = "-36px";
+    };
+})();
+
 
 //几个工具函数
 
@@ -169,3 +183,21 @@ function css(obj, attr, value) {
             return "";
     }
 }
+
+// 新添加一个Cookie
+var addCookieItem = function(name,value,expire){ // expire的单位为天
+    var today = new Date();
+    today.setDate(today.getDate() + expire);
+    document.cookie = name + "=" + value + "; expires=" + today.toGMTString();
+};
+//通过Cookie的名获取相应的值
+var getCookieItem = function(name){
+    var matchItem = document.cookie.match(new RegExp(name + '=(\\w+)'));
+    if(matchItem){
+        return matchItem[1];
+    }
+};
+//更改某个Cookie的值
+var setCookieItem = function(name,newValue,expire){
+    addCookieItem(name,newValue,expire);
+};

@@ -6,6 +6,7 @@
 .mainbox{
     width: 1616px;
     font-family: 'Microsoft YaHei';
+    margin: 0 auto;
 }
 
 a{
@@ -35,6 +36,7 @@ a{
 .notice .hp2{
     float: right;
     margin-right: 207px;
+    cursor: pointer;
 }
 
 .notice .close{
