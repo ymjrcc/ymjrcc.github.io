@@ -887,5 +887,6 @@ footer .fp3 a:hover{
     letter-spacing: 3px;
     font-weight: bold;
     text-align: center;
+    cursor: pointer;
 }
 
