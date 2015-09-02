@@ -157,7 +157,6 @@ var dontremind = (function(){
 
 
 //几个工具函数
-
 function hasClass(obj, cls) {
     return obj.className.match(new RegExp('(\\s|^)' + cls + '(\\s|$)'));
 }
