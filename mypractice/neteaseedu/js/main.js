@@ -73,7 +73,6 @@ function clickLanguage(){
     pages20.style.display = "block";
 }
 
-
 // 轮播图
 
 var bannerimg = ["img/banner1.jpg", "img/banner2.jpg", "img/banner3.jpg"];
@@ -208,3 +207,60 @@ var getCookieItem = function(name){
 var setCookieItem = function(name,newValue,expire){
     addCookieItem(name,newValue,expire);
 };
+
+
+
+    var ajax = function(url,options){
+        var xhr = new XMLHttpRequest();
+        var method,queryString='',requestURL = url;//requestURL是供GET方法时使用
+        var keyValuePairs = [];
+        var i,lenOfKeyvaluepairs;
+
+        requestURL += (requestURL.indexOf('?') == -1 ? '?' : '&');
+        method = options.type ? options.type : 'get';
+
+        //处理传入的参数，编码并拼接
+        if(options.data){
+            if(typeof options.data == 'string'){
+                queryString = options.data;
+                requestURL += queryString;
+            }
+            else {
+                for(var p in options.data){
+                    if(options.data.hasOwnProperty(p)){
+                        var key = encodeURIComponent(p);
+                        var value = encodeURIComponent(options.data[p]);
+                        keyValuePairs.push(key + '=' + value);
+                    }
+                }
+                lenOfKeyvaluepairs = keyValuePairs.length;
+                queryString = keyValuePairs.join('&');
+                requestURL += queryString;       
+            }        
+        }
+
+        xhr.onreadystatechange = function(){
+            if(xhr.readyState == 4){
+                if((xhr.status >= 200 && xhr.status <300) || xhr.status == 304){
+                    options.onsuccess(xhr);
+                }  
+                else{
+                    if(options.onfail){
+                        options.onfail();
+                    }
+                    else{
+                        alert('Sorry,your request is unsuccessful:' + xhr.statusText);
+                    }
+                }
+            }
+        };
+        if(method == 'get'){
+            xhr.open(method,requestURL,true);
+            xhr.send(null);
+        }
+        else{
+            xhr.open(method,url,true);
+            xhr.setRequestHeader('Content-Type','application/x-www-form-urlencoded');
+            xhr.send(queryString);
+        }
+    };

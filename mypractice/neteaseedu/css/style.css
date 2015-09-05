@@ -482,6 +482,11 @@ a{
     margin-top: 334px;
     box-shadow: -2px 2px #ddd;
     height: 778px;
+    box-sizing: border-box;
+}
+
+.maincontent3 .box2 .hot:hover{
+    border-right: 2px #ccc solid;
 }
 
 .maincontent3 .box2 .hot .hot-rank{
@@ -577,6 +582,11 @@ a{
     height: 228px;
     background-color: #fff;
     box-shadow: 2px 2px 1px #e6e6e6;
+    cursor: pointer;
+}
+
+.maincontent3 .box2 .row .cls:hover{
+    box-shadow: 4px 4px 2px #ddd;
 }
 
 .maincontent3 .box2 .row1 .cls{
@@ -624,6 +634,10 @@ a{
     white-space: nowrap;
     color: #333;
     padding-left: 5px;
+}
+
+.cls-title:hover{
+    color: #39a030;
 }
 
 .cls-teacher{
