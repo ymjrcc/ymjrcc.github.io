@@ -5,6 +5,7 @@
 	<title> Yiming </title>
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/animate.min.css">
 </head>
 <body>
 
@@ -14,7 +15,7 @@
 	
 	<header>
 
-		<nav>
+		<nav class="wow fadeInDown">
 			<div class="logo"><a href="javascript:;">Yiming</a></div>
 			<ul>				
 				<li><a href="javascript:;">首页</a></li>
@@ -26,10 +27,10 @@
 
 		<div id="banner">
 			<div class="inner">
-				<h1>Yiming</h1>
-				<p class="sub-heading">Life is not easy <br>but I have a rock heart!</p>
-				<a class="btn1" href="#aboutme">About Me</a>
-				<div class="more">MORE</div>
+				<h1 class="wow fadeIn" data-wow-delay="0.3s">Yiming</h1>
+				<p class="sub-heading wow fadeIn" data-wow-delay="0.6s">Life is not easy <br>but I have a rock heart!</p>
+				<a class="btn1 wow fadeIn" href="#aboutme" data-wow-delay="0.9s">About Me</a>
+				<div class="more wow fadeIn" data-wow-delay="1.2s">MORE</div>
 			</div>
 		</div>
 	</header>
@@ -40,10 +41,10 @@
 		<section class="s2" name="aboutme" id="aboutme">
 
 			<div class="about a1">
-				<div class="img-section">
+				<div class="img-section wow fadeInRight" >
 					<img src="images/me.jpg" alt="">
 				</div>
-				<div class="text-section ts1">
+				<div class="text-section ts1 wow fadeInRight" data-wow-delay="0.2s">
 					<h2>Yiming</h2>
 					<div class="sub-heading">何一鸣</div>
 					<p>
@@ -58,29 +59,29 @@
 			</div>
 
 			<div class="about a2">
-				<div class="text-section ts2">
+				<div class="text-section ts2 wow fadeInLeft" data-wow-delay="0.2s">
 					<h2>计算机技能</h2>
 					<div class="sub-heading">Computer Skills</div>
 					<p>
 						熟悉 HTML、CSS，了解HTML5、CSS3 新特性<br>
 						熟悉 JavaScript、jQurey<br>
-						熟悉 web 开发流程，熟练使用 Sublime Text、Visual Studio 2013<br>
-						熟练使用 Photoshop、Sass 进行前端开发<br>
+						熟悉 web 开发流程，熟练使用 Sublime Text、Visual Studio 2013、IntelliJ IDEA 等<br>
+						熟练使用Photoshop、Sass，了解grunt 等前端开发工具<br>
 						会使用 Bootstrap、RequireJS、Three.js 等前端框架/库<br>
 						了解 Node.JS、AngularJS						
 					</p>
 
 				</div>
-				<div class="img-section">
+				<div class="img-section wow fadeInLeft">
 					<img src="images/cs.jpg" alt="">
 				</div>
 			</div>
 
 			<div class="about a1">
-				<div class="img-section">
+				<div class="img-section wow fadeInRight">
 					<img src="images/bja.jpg" alt="">
 				</div>
-				<div class="text-section ts1">
+				<div class="text-section ts1 wow fadeInRight" data-wow-delay="0.2s">
 					<h2>实习&工作经历</h2>
 					<div class="sub-heading">你好</div>
 					<p>
@@ -89,18 +90,21 @@
 					<p>
 						2014.07 - 2015.07   中钢集团天澄环保科技股份有限公司  助理设计师
 					</p>
+					<p>
+						2015.09 - 至今      杭州尚尚签网络科技有限公司        前端开发工程师
+					</p>
 				</div>
 			</div>
 
 			<div class="about a2">
-				<div class="text-section ts2">
-					<h2>求职意向</h2>
-					<div class="sub-heading"> web 前端工程师</div>
+				<div class="text-section ts2 wow fadeInLeft" data-wow-delay="0.2s">
+					<h2>我的目标</h2>
+					<div class="sub-heading">web 前端开发工程师</div>
 					<p>
-						<br>Web 前端工程师。
+						<br>成为一名优秀的 web 前端开发工程师。
 					</p>
 				</div>
-				<div class="img-section">
+				<div class="img-section wow fadeInLeft">
 					<img src="images/js.jpg" alt="">
 				</div>
 			</div>
@@ -117,7 +121,7 @@
 
 			<div class="card-group">
 				
-				<div class="card">
+				<div class="card wow zoomIn">
 					<a href="http://ymjrcc.github.io/mypractice/gallery" target="_blank">
 						<h3>Photos Gallery</h3>
 						<p>
@@ -126,7 +130,7 @@
 					</a>
 				</div>
 
-				<div class="card">
+				<div class="card wow zoomIn">
 					<a href="http://ymjrcc.github.io/mypractice/mytodolist" target="_blank">
 						<h3>To-do List</h3>
 						<p>
@@ -136,7 +140,7 @@
 
 				</div>
 
-				<div class="card">
+				<div class="card wow zoomIn">
 					<a href="http://ymjrcc.github.io/mypractice/website1" target="_blank">
 						<h3>a website</h3>
 						<p>
@@ -145,7 +149,7 @@
 					</a>
 				</div>
 
-				<div class="card">
+				<div class="card wow zoomIn">
 					<a href="http://ymjrcc.github.io/workslist" target="_blank">
 						<h3>More</h3>
 						<p>
@@ -166,17 +170,17 @@
 						
 					</div>
 					<p class="sub-heading">
-						<p>手机：15271831026</p>						
-						<p>邮箱：hym826@126.com</p>
-						<p>QQ：420491300</p>
+						<p class="wow swing">手机：15271831026</p>						
+						<p class="wow swing" data-wow-delay="0.2s">邮箱：hym826@126.com</p>
+						<p class="wow swing" data-wow-delay="0.4s">QQ：420491300</p>
 					</p>
 				</div>
-<!-- 				<div class="icon-group">
+				<div class="icon-group wow zoomInUp" data-wow-duration="2s">
 					<span class="icon"><span class="item item1"><a href="http://ymjrcc.github.io/"  target="_blank">主页</a></span></span>
 					<span class="icon"><span class="item item2"><a href="https://github.com/ymjrcc"  target="_blank">GitHub</a></span></span>
 					<span class="icon"><span class="item item3"><a href="http://www.zhihu.com/people/ymjrcc"  target="_blank">知乎</a></span></span>
 					
-				</div> -->
+				</div>
 			</div>
 		</section>
 
@@ -196,17 +200,21 @@
 	</footer>
 
 	<!-- 微信&顶部 -->
-<!-- 	<div class="toolbar">
+	<div class="toolbar">
 		<a href="javascript:;" class="toolbar-item toolbar-weixin" id="weixin1">
 			<span class="toolbar-layer" id="weixin2"></span>
 		</a>
 		<a href="javascript:;" class="toolbar-item toolbar-top" id="backtop"></a>
-	</div>	 -->
+	</div>	
 
-</div>
-	
-	<script src="js/require.js" data-main="js/main"></script>
-	
+</div>	
+	<script src="js/jquery-1.8.0.js"></script>
 	<script src="js/main.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script>
+		if (!(/msie [6|7|8|9]/i.test(navigator.userAgent))){
+			new WOW().init();
+		};
+</script>
 </body>
 </html>

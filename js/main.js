@@ -1,10 +1,11 @@
-requirejs.config({
-	paths:{
-		jquery:'jquery-1.8.0'
-	}
-});
+// requirejs.config({
+// 	paths:{
+// 		jquery:'jquery-1.8.0',
+// 		wow:'wow.min'
+// 	}
+// });
 
-requirejs(['jquery'],function($){
+// requirejs(['jquery'],function($){
 
 	//点击按钮返回顶部
 	$('#backtop').on('click',move);
@@ -46,4 +47,4 @@ requirejs(['jquery'],function($){
 		}
 	}
 
-});
+// });
