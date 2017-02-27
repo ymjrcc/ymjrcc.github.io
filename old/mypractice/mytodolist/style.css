@@ -1,0 +1,78 @@
+body{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+h1,h3{
+    text-align: center;
+}
+.parent{
+    display: flex;
+}
+.child{
+    flex:1;
+    border-radius: 10px;
+}
+
+.c1{background-color: #FCC}
+.c2{background-color: #AFF}
+.c3{background-color: #9F9}
+
+.add{
+    background-color: #DDD;
+    text-align: center;
+}
+
+.child+.child{
+    margin-left: 20px;
+}
+.task-list input,.task-list textarea {
+    width: 240px;
+    margin: 2px 10px;
+}
+.task-list input {
+    height: 30px;
+}
+
+.todo-task {
+    border-radius: 5px;
+    background-color: #fff;
+    width: 230px;
+    margin: 5px;
+    padding: 5px;
+    position: relative;
+}
+.todo-task .remove {
+    color: red;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    cursor: pointer;
+}
+.task-list input[type="button"] {
+    width: 100px;
+    margin: 5px;
+}
+.todo-task > .task-header {
+    font-weight: bold;
+}
+.todo-task > .task-date {
+    font-size: small;
+    font-style: italic;
+}
+.todo-task > .task-description {
+    font-size: smaller;
+}
+
+#delete-div {
+    background-color: #fff;
+    border: 1px dotted #000;
+    margin: 10px 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+
+
+

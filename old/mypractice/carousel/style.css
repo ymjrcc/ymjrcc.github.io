@@ -1,0 +1,44 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+.poster-main{
+	margin: 50px;
+}
+ul{
+	list-style: none;
+}
+a,img{
+	display: block;
+}
+.poster-main{
+	width: 800px;
+	height: 270px;
+	position: relative;
+}
+.poster-list{
+	width: 800px;
+	height: 270px;
+
+}
+.poster-btn{
+	width: 100px;
+	height: 270px;
+	position: absolute;
+	top:0;
+	z-index: 10;
+	color: #999;
+	cursor: pointer;
+}
+.poster-prev-btn{
+	left:0;
+	background: url(img/btn_l.png) no-repeat center center;
+}
+.poster-next-btn{
+	right: 0;
+	background: url(img/btn_r.png) no-repeat center center;
+}
+.poster-item{
+	position: absolute;
+	left: 0;
+	top:0;

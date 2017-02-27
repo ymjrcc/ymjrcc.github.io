@@ -1,0 +1,221 @@
+.home__home-eoHdD{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background-image: url(images/3f4d3e4d.homebg.jpg);
+    background-size: cover;
+    color: #fff;
+    position: relative;
+}
+
+.home__nav-3UAsZ{
+    font-family: "Consolas",sans-serif; 
+	height: 50px;
+    margin-bottom: 150px;
+	background-color: rgba(0,0,0,0.2);
+}
+
+@media (max-height: 570px){
+    .home__nav-3UAsZ{
+        margin-bottom: 50px;
+    }
+}
+
+.home__nav-3UAsZ::after{
+    content: '';
+    clear: both;
+}
+
+.home__nav-3UAsZ a{
+    color: #fff;
+}
+
+.home__navRight-3TeEE{
+    float: right;
+	margin: 0;
+    padding: 0;
+	list-style: none;
+}
+
+.home__navItem-1WIRy,
+.home__logo-twxd2{
+	display: inline-block;
+	line-height: 50px;
+	margin-right: 20px;
+}
+
+.home__logo-twxd2{   
+	padding-left: 20px;
+	float: left;
+	font-size: 2rem;
+	letter-spacing: 1px;
+    margin-right: 0;
+}
+
+.home__navItem-1WIRy a, 
+.home__logo-twxd2 a{
+	line-height: 50px;
+	text-decoration: none;
+	display: inline-block;
+}
+
+.home__cover-1-Qk9{
+    font-family: "Consolas",sans-serif;    
+    max-width: 300px;
+	text-align: center;
+	margin: 0 auto;
+	color: #eee;
+}
+
+.home__title-1WgcK{
+    font-weight: bold;
+    font-size: 3.2rem;
+	margin: 0;
+    letter-spacing:3px;
+	padding: 12px;
+    margin-bottom: 25px;
+	border-top: 2px solid #fff;
+	border-bottom: 2px solid #fff;
+    text-shadow: 0 0 5px #999;
+}
+
+.home__subTitle-2w8ji{
+    font-size: 1.8rem;
+	line-height: 30px;
+	margin: 0;
+	font-weight: bold;
+    text-shadow: 0 0 3px #999;
+}
+
+.home__footer-3Lvo6{
+    font-family: "Consolas",sans-serif;
+    font-size: 1.4rem;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    text-shadow: 0 0 5px #666;
+}
+
+
+/*动画*/
+
+.home__transitionWrapper-2x_uP {
+    position: relative;
+}
+
+.transitionWrapper-enter {
+    opacity: 0.01;
+    transition: opacity 500ms ease-in;
+}
+ 
+.transitionWrapper-enter.transitionWrapper-enter-active {
+    opacity: 1;
+}
+ 
+.transitionWrapper-leave {
+    opacity: 1;
+    transition: opacity 500ms ease-in;
+}
+ 
+.transitionWrapper-leave.transitionWrapper-leave-active {
+    opacity: 0;
+}.about__about-244xt{
+    width: 300px;
+    margin: 0 auto;
+    text-shadow: 0 0 5px #666;
+    color: #fff;
+}
+
+.about__cv-1hKNU{
+    display: block;
+    margin-top: 30px;
+    text-align: center;
+    text-decoration: none;
+	background-color: #444;
+	color: #eee;
+	padding: 10px;
+	letter-spacing: 2px;
+	width: 100px;
+	height: 25px;
+	line-height: 25px;
+}.works__works-3so8w{
+    width: 300px;
+    margin: 0 auto;
+    text-shadow: 0 0 5px #666;
+    color: #fff;
+    font-family: "Consolas",sans-serif; 
+    position: relative;
+}
+
+.works__fireball-17v0s{
+    position: absolute;
+    right: 0;
+    top: 60px;
+}
+
+.works__fireball-17v0s img{
+    display: block;
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.works__fireballTitle-_csks{
+    text-align: center;
+}
+
+.works__title-1dj0z{
+    text-align: center;
+    font-size: 3rem;
+    letter-spacing: 1px;
+    margin: 0;
+    padding: 0;
+}
+
+.works__list-zTa97{
+    font-size: 1.8rem;
+    padding-left: 20px;
+}
+
+.works__item-2Bw7D{
+    margin-bottom: 5px;
+}
+
+.works__item-2Bw7D a{
+    color: #fff;
+    line-height: 32px;
+    padding: 0 2px 1px;
+    border-bottom: 1px solid #fff;
+}.contact__contact-2zgCB{
+    text-align: center;
+    max-width: 300px;
+    margin: 0 auto;
+    text-shadow: 0 0 5px #666;
+}
+
+.contact__title-2EzXp {
+    font-size: 30px;
+    letter-spacing: 5px;
+    margin: 0;
+    padding: 0;
+}
+
+.contact__hr-2RRZL {
+    background-color: #ccc;
+    width: 80%;
+    height: 2px;
+    margin: 20px auto;
+}
+
+.contact__info-1ZILN{
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 30px;
+    margin: 25px 0;
+    letter-spacing: 1px;
+}
