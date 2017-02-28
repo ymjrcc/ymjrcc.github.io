@@ -155,6 +155,7 @@
     position: absolute;
     right: 0;
     top: 60px;
+    display: none;
 }
 
 .works__fireball-17v0s img{
@@ -179,7 +180,6 @@
 
 .works__list-zTa97{
     font-size: 1.8rem;
-    padding-left: 20px;
 }
 
 .works__item-2Bw7D{

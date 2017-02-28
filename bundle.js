@@ -44,7 +44,7 @@ webpackJsonp([0,2],{
 	        _reactRouter.Route,
 	        { path: '/', component: _Home2.default },
 	        _react2.default.createElement(_reactRouter.IndexRoute, { component: _Cover2.default }),
-	        _react2.default.createElement(_reactRouter.Route, { path: '/about', component: _About2.default }),
+	        _react2.default.createElement(_reactRouter.Route, { path: '/about', component: _Cover2.default }),
 	        _react2.default.createElement(_reactRouter.Route, { path: '/works', component: _Works2.default }),
 	        _react2.default.createElement(_reactRouter.Route, { path: '/contact', component: _Contact2.default })
 	    )
