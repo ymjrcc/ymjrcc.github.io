@@ -11281,6 +11281,9 @@ i.logout___3cxhc:hover {
   position: relative;
   z-index: 10;
 }
+.inside___36w7T {
+  position: fixed;
+}
 /* stylelint-disable at-rule-empty-line-before,at-rule-name-space-after,at-rule-no-unknown */
 /* stylelint-disable no-duplicate-selectors */
 /* stylelint-disable declaration-bang-space-before,no-duplicate-selectors */
@@ -14387,32 +14390,36 @@ textarea.ant-input-number {
 .ant-slider-disabled .ant-slider-dot {
   cursor: not-allowed !important;
 }
-.root___31zzZ {
+.root___34J-f {
   background-color: #fff;
 }
-.title___20deA {
+.title___IQQEP {
   text-align: center;
   padding: 10px;
 }
-.row___BlJH_ {
+.row___lGi6t {
   padding-bottom: 15px;
 }
-.label___1i114 {
+.label___3b1m7 {
   text-align: right;
   padding-right: 10px;
   height: 32px;
   line-height: 32px;
 }
-.input___45AdR,
-.slider___19KWK {
+.input___1chbN,
+.slider___gdoIy {
   width: 200px;
 }
-.select___9TOXS {
+.select___1u17h {
   width: 200px;
   display: inline-block;
 }
-.table___1aoOz {
+.table___3fzJ6 {
   padding: 10px 20px;
+}
+.pagination___2UnZW {
+  padding: 10px 20px;
+  text-align: right;
 }
 .root___3nrE_ {
   background-color: #fff;
