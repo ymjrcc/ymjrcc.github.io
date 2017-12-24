@@ -13779,6 +13779,124 @@ span.ant-radio + * {
 /* stylelint-disable no-duplicate-selectors */
 /* stylelint-disable declaration-bang-space-before,no-duplicate-selectors */
 /* stylelint-disable declaration-bang-space-before,no-duplicate-selectors */
+.ant-collapse {
+  font-family: "Helvetica Neue For Number", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  color: rgba(0, 0, 0, 0.65);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background-color: #fafafa;
+  border-radius: 4px;
+  border: 1px solid #d9d9d9;
+  border-bottom: 0;
+}
+.ant-collapse > .ant-collapse-item {
+  border-bottom: 1px solid #d9d9d9;
+}
+.ant-collapse > .ant-collapse-item:last-child,
+.ant-collapse > .ant-collapse-item:last-child > .ant-collapse-header {
+  border-radius: 0 0 4px 4px;
+}
+.ant-collapse > .ant-collapse-item > .ant-collapse-header {
+  line-height: 22px;
+  padding: 12px 0 12px 40px;
+  color: rgba(0, 0, 0, 0.85);
+  cursor: pointer;
+  position: relative;
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+}
+.ant-collapse > .ant-collapse-item > .ant-collapse-header .arrow {
+  font-style: normal;
+  vertical-align: baseline;
+  text-align: center;
+  text-transform: none;
+  line-height: 1;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transform: rotate(0);
+      -ms-transform: rotate(0);
+          transform: rotate(0);
+  font-size: 12px;
+  position: absolute;
+  display: inline-block;
+  line-height: 46px;
+  vertical-align: top;
+  -webkit-transition: -webkit-transform 0.24s;
+  transition: -webkit-transform 0.24s;
+  -o-transition: transform 0.24s;
+  transition: transform 0.24s;
+  transition: transform 0.24s, -webkit-transform 0.24s;
+  top: 0;
+  left: 16px;
+}
+.ant-collapse > .ant-collapse-item > .ant-collapse-header .arrow:before {
+  display: block;
+  font-family: "anticon" !important;
+}
+.ant-collapse > .ant-collapse-item > .ant-collapse-header .arrow:before {
+  content: "\E61F";
+}
+.ant-collapse-anim-active {
+  -webkit-transition: height 0.2s cubic-bezier(0.215, 0.61, 0.355, 1);
+  -o-transition: height 0.2s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: height 0.2s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.ant-collapse-content {
+  overflow: hidden;
+  color: rgba(0, 0, 0, 0.65);
+  padding: 0 16px;
+  background-color: #fff;
+  border-top: 1px solid #d9d9d9;
+}
+.ant-collapse-content > .ant-collapse-content-box {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+.ant-collapse-content-inactive {
+  display: none;
+}
+.ant-collapse-item:last-child > .ant-collapse-content {
+  border-radius: 0 0 4px 4px;
+}
+.ant-collapse > .ant-collapse-item > .ant-collapse-header[aria-expanded="true"] .arrow {
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+.ant-collapse-borderless {
+  background-color: #fff;
+  border: 0;
+}
+.ant-collapse-borderless > .ant-collapse-item {
+  border-bottom: 1px solid #d9d9d9;
+}
+.ant-collapse-borderless > .ant-collapse-item:last-child,
+.ant-collapse-borderless > .ant-collapse-item:last-child .ant-collapse-header {
+  border-radius: 0;
+}
+.ant-collapse-borderless > .ant-collapse-item > .ant-collapse-content {
+  background-color: transparent;
+  border-top: 0;
+}
+.ant-collapse-borderless > .ant-collapse-item > .ant-collapse-content > .ant-collapse-content-box {
+  padding-top: 4px;
+}
+.ant-collapse .ant-collapse-item-disabled > .ant-collapse-header,
+.ant-collapse .ant-collapse-item-disabled > .ant-collapse-header > .arrow {
+  cursor: not-allowed;
+  color: rgba(0, 0, 0, 0.25);
+}
+/* stylelint-disable at-rule-empty-line-before,at-rule-name-space-after,at-rule-no-unknown */
+/* stylelint-disable no-duplicate-selectors */
+/* stylelint-disable declaration-bang-space-before,no-duplicate-selectors */
+/* stylelint-disable declaration-bang-space-before,no-duplicate-selectors */
 .ant-switch {
   font-family: "Helvetica Neue For Number", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
@@ -14215,183 +14333,9 @@ textarea.ant-input-number {
 .ant-input-number-handler-down-disabled:hover .ant-input-number-handler-down-inner {
   color: rgba(0, 0, 0, 0.25);
 }
-/* stylelint-disable at-rule-empty-line-before,at-rule-name-space-after,at-rule-no-unknown */
-/* stylelint-disable no-duplicate-selectors */
-/* stylelint-disable declaration-bang-space-before,no-duplicate-selectors */
-/* stylelint-disable declaration-bang-space-before,no-duplicate-selectors */
-.ant-slider {
-  font-family: "Helvetica Neue For Number", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  line-height: 1.5;
-  color: rgba(0, 0, 0, 0.65);
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  position: relative;
-  margin: 10px 6px;
-  padding: 4px 0;
-  height: 12px;
-  cursor: pointer;
-}
-.ant-slider-vertical {
-  width: 12px;
-  height: 100%;
-  margin: 6px 10px;
-  padding: 0 4px;
-}
-.ant-slider-vertical .ant-slider-rail {
-  height: 100%;
-  width: 4px;
-}
-.ant-slider-vertical .ant-slider-track {
-  width: 4px;
-}
-.ant-slider-vertical .ant-slider-handle {
-  margin-left: -5px;
-  margin-bottom: -7px;
-}
-.ant-slider-vertical .ant-slider-mark {
-  top: 0;
-  left: 12px;
-  width: 18px;
-  height: 100%;
-}
-.ant-slider-vertical .ant-slider-mark-text {
-  left: 4px;
-  white-space: nowrap;
-}
-.ant-slider-vertical .ant-slider-step {
-  width: 4px;
-  height: 100%;
-}
-.ant-slider-vertical .ant-slider-dot {
-  top: auto;
-  left: 2px;
-  margin-bottom: -4px;
-}
-.ant-slider-with-marks {
-  margin-bottom: 28px;
-}
-.ant-slider-rail {
-  position: absolute;
-  width: 100%;
-  height: 4px;
-  border-radius: 2px;
-  background-color: #f5f5f5;
-  -webkit-transition: background-color 0.3s;
-  -o-transition: background-color 0.3s;
-  transition: background-color 0.3s;
-}
-.ant-slider-track {
-  position: absolute;
-  height: 4px;
-  border-radius: 4px;
-  background-color: #91d5ff;
-  -webkit-transition: background-color 0.3s ease;
-  -o-transition: background-color 0.3s ease;
-  transition: background-color 0.3s ease;
-}
-.ant-slider-handle {
-  position: absolute;
-  margin-left: -7px;
-  margin-top: -5px;
-  width: 14px;
-  height: 14px;
-  cursor: pointer;
-  border-radius: 50%;
-  border: solid 2px #91d5ff;
-  background-color: #fff;
-  -webkit-transition: border-color 0.3s, -webkit-transform 0.3s cubic-bezier(0.18, 0.89, 0.32, 1.28);
-  transition: border-color 0.3s, -webkit-transform 0.3s cubic-bezier(0.18, 0.89, 0.32, 1.28);
-  -o-transition: border-color 0.3s, transform 0.3s cubic-bezier(0.18, 0.89, 0.32, 1.28);
-  transition: border-color 0.3s, transform 0.3s cubic-bezier(0.18, 0.89, 0.32, 1.28);
-  transition: border-color 0.3s, transform 0.3s cubic-bezier(0.18, 0.89, 0.32, 1.28), -webkit-transform 0.3s cubic-bezier(0.18, 0.89, 0.32, 1.28);
-}
-.ant-slider-handle:focus {
-  border-color: #46a6ff;
-  -webkit-box-shadow: 0 0 0 5px #8cc8ff;
-          box-shadow: 0 0 0 5px #8cc8ff;
-  outline: none;
-}
-.ant-slider-handle.ant-tooltip-open {
-  border-color: #1890ff;
-}
-.ant-slider:hover .ant-slider-rail {
-  background-color: #e1e1e1;
-}
-.ant-slider:hover .ant-slider-track {
-  background-color: #69c0ff;
-}
-.ant-slider:hover .ant-slider-handle:not(.ant-tooltip-open) {
-  border-color: #69c0ff;
-}
-.ant-slider-mark {
-  position: absolute;
-  top: 14px;
-  left: 0;
-  width: 100%;
-  font-size: 14px;
-}
-.ant-slider-mark-text {
-  position: absolute;
-  display: inline-block;
-  vertical-align: middle;
-  text-align: center;
-  cursor: pointer;
-  color: rgba(0, 0, 0, 0.45);
-}
-.ant-slider-mark-text-active {
-  color: rgba(0, 0, 0, 0.65);
-}
-.ant-slider-step {
-  position: absolute;
-  width: 100%;
-  height: 4px;
-  background: transparent;
-}
-.ant-slider-dot {
-  position: absolute;
-  top: -2px;
-  margin-left: -4px;
-  width: 8px;
-  height: 8px;
-  border: 2px solid #e8e8e8;
-  background-color: #fff;
-  cursor: pointer;
-  border-radius: 50%;
-  vertical-align: middle;
-}
-.ant-slider-dot:first-child {
-  margin-left: -4px;
-}
-.ant-slider-dot:last-child {
-  margin-left: -4px;
-}
-.ant-slider-dot-active {
-  border-color: #8cc8ff;
-}
-.ant-slider-disabled {
-  cursor: not-allowed;
-}
-.ant-slider-disabled .ant-slider-track {
-  background-color: rgba(0, 0, 0, 0.25) !important;
-}
-.ant-slider-disabled .ant-slider-handle,
-.ant-slider-disabled .ant-slider-dot {
-  border-color: rgba(0, 0, 0, 0.25) !important;
-  background-color: #fff;
-  cursor: not-allowed;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-}
-.ant-slider-disabled .ant-slider-mark-text,
-.ant-slider-disabled .ant-slider-dot {
-  cursor: not-allowed !important;
-}
 .root___34J-f {
   background-color: #fff;
+  padding: 20px;
 }
 .title___IQQEP {
   text-align: center;
@@ -14410,12 +14354,19 @@ textarea.ant-input-number {
 .slider___gdoIy {
   width: 200px;
 }
+.inputShort___3LV55 {
+  width: 93px;
+}
 .select___1u17h {
   width: 200px;
   display: inline-block;
 }
 .table___3fzJ6 {
-  padding: 10px 20px;
+  padding: 20px 0;
+}
+.table___3fzJ6 .ant-table-thead > tr > th,
+.table___3fzJ6 .ant-table-tbody > tr > td {
+  padding: 10px 5px;
 }
 .pagination___2UnZW {
   padding: 10px 20px;
@@ -14462,6 +14413,33 @@ textarea.ant-input-number {
 }
 .table___3Q_75 {
   padding: 0 10px;
+}
+.root___1B2-1 {
+  background-color: #fff;
+}
+.tableTit___18EUN {
+  padding: 10px 0;
+  text-align: center;
+  margin: 0;
+}
+.table___3TunD {
+  padding: 0 10px;
+}
+.root___3iH68 {
+  padding: 20px;
+}
+.input___17B2G {
+  margin-bottom: 15px;
+}
+textarea.textarea___3V8kK {
+  min-height: 200px;
+  margin-bottom: 20px;
+}
+.rule___3-j-I {
+  margin-top: 20px;
+}
+.root___Et_Kq {
+  background-color: #fff;
 }
 /* stylelint-disable at-rule-empty-line-before,at-rule-name-space-after,at-rule-no-unknown */
 /* stylelint-disable no-duplicate-selectors */
