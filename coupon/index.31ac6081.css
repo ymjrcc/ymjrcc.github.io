@@ -14333,97 +14333,76 @@ textarea.ant-input-number {
 .ant-input-number-handler-down-disabled:hover .ant-input-number-handler-down-inner {
   color: rgba(0, 0, 0, 0.25);
 }
-.root___34J-f {
-  background-color: #fff;
-  padding: 20px;
-}
-.title___IQQEP {
+.title___1y8m_ {
   text-align: center;
   padding: 10px;
 }
-.row___lGi6t {
+.row___pw5Qd {
   padding-bottom: 15px;
 }
-.label___3b1m7 {
+.label___2Y7tw {
   text-align: right;
   padding-right: 10px;
   height: 32px;
   line-height: 32px;
 }
-.input___1chbN,
-.slider___gdoIy {
+.input___2v9jR,
+.slider___RQULm {
   width: 200px;
 }
-.inputShort___3LV55 {
+.inputShort___3UXVb {
   width: 93px;
 }
-.select___1u17h {
+.select___1tIDc {
   width: 200px;
   display: inline-block;
 }
-.table___3fzJ6 {
+.table___26YYv {
   padding: 20px 0;
 }
-.table___3fzJ6 .ant-table-thead > tr > th,
-.table___3fzJ6 .ant-table-tbody > tr > td {
+.table___26YYv .ant-table-thead > tr > th,
+.table___26YYv .ant-table-tbody > tr > td {
   padding: 10px 5px;
 }
-.pagination___2UnZW {
+.pagination___VHUmK {
   padding: 10px 20px;
   text-align: right;
 }
-.root___3nrE_ {
-  background-color: #fff;
-}
-.title___3U_X1 {
+.title___3amSS {
   text-align: center;
   padding: 10px;
 }
-.row___1N_YR {
+.row___1iosf {
   padding-bottom: 15px;
 }
-.label___IJPRr {
+.label___21Nza {
   text-align: right;
   padding-right: 10px;
   height: 32px;
   line-height: 32px;
 }
-.input___2oAVs,
-.slider___11kPj {
-  width: 200px;
+.input___3dNMc {
+  width: 240px;
 }
-.select___36fc9 {
-  width: 200px;
+.select___31nBR {
+  width: 240px;
   display: inline-block;
 }
-.table___3dYQV {
-  padding: 10px 20px;
+.table___2F8AX {
+  padding: 20px;
 }
-.pagination___Jh4Nn {
+.pagination___1P15K {
   padding: 10px 20px;
   text-align: right;
 }
-.root___1x31b {
+.root___2q2yj {
   background-color: #fff;
 }
-.tableTit___1A-Cq {
-  padding: 10px 0;
-  text-align: center;
-  margin: 0;
+.select___2DDRS {
+  width: 80%;
 }
-.table___3Q_75 {
-  padding: 0 10px;
-}
-.root___1B2-1 {
-  background-color: #fff;
-}
-.tableTit___18EUN {
-  padding: 10px 0;
-  text-align: center;
-  margin: 0;
-}
-.table___3TunD {
-  padding: 0 10px;
+.main___iRTVV {
+  padding: 20px;
 }
 .root___3iH68 {
   padding: 20px;
@@ -14440,6 +14419,22 @@ textarea.textarea___3V8kK {
 }
 .root___Et_Kq {
   background-color: #fff;
+}
+.root___zmRQz {
+  padding: 20px;
+}
+textarea.textarea___MFotz {
+  min-height: 200px;
+  margin-bottom: 20px;
+}
+.root___1B2-1 {
+  background-color: #fff;
+}
+.select___IkPWy {
+  width: 80%;
+}
+.main___2eW4- {
+  padding: 20px;
 }
 /* stylelint-disable at-rule-empty-line-before,at-rule-name-space-after,at-rule-no-unknown */
 /* stylelint-disable no-duplicate-selectors */
