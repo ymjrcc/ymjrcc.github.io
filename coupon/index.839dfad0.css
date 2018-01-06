@@ -14550,6 +14550,10 @@ textarea.textarea___3V8kK {
 .rule___3-j-I {
   margin-top: 20px;
 }
+.table___32_91 .ant-table-thead > tr > th,
+.table___32_91 .ant-table-tbody > tr > td {
+  padding: 10px 5px;
+}
 .root___Et_Kq {
   background-color: #fff;
 }
@@ -14557,7 +14561,7 @@ textarea.textarea___3V8kK {
   padding: 20px;
 }
 textarea.textarea___MFotz {
-  min-height: 200px;
+  min-height: 400px;
   margin-bottom: 20px;
 }
 .select___2eYPM {
