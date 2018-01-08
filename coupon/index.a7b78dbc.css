@@ -14568,6 +14568,11 @@ textarea.textarea___MFotz {
   width: 320px;
   display: inline-block;
 }
+.checkboxGroup___1VWKR .ant-checkbox-disabled + span {
+  color: rgba(0, 0, 0, 0.65);
+  font-weight: bold;
+  cursor: default;
+}
 .root___1B2-1 {
   background-color: #fff;
 }
