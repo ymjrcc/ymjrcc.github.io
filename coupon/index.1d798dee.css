@@ -14568,10 +14568,12 @@ textarea.textarea___MFotz {
   width: 320px;
   display: inline-block;
 }
-.checkboxGroup___1VWKR .ant-checkbox-disabled + span {
+.checkboxGroup___1VWKR .ant-checkbox-checked + span {
   color: rgba(0, 0, 0, 0.65);
   font-weight: bold;
-  cursor: default;
+}
+.col___x3KTe {
+  padding-bottom: 5px;
 }
 .root___1B2-1 {
   background-color: #fff;
