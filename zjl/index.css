@@ -1,0 +1,44 @@
+html,body{
+    margin: 0;
+    padding: 0;
+}
+
+.root{
+    width: 100vw;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.banner{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+p{
+    padding: 0 20px;
+}
+
+.p2{
+    color: red;
+    font-weight: bold;
+    font-size: 32px;
+}
+
+.img1{
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+}
+
+.price{
+    color: red;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.p3{
+    color: #666;
+    font-size: 12px;
+    font-style: italic;
+}
